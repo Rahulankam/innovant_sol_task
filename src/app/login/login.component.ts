@@ -35,18 +35,19 @@ export class LoginComponent {
 
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      // Remove this if login API doesn’t require authorization header
+      
       'Authorization': 'dAwMpo/TAWLhFrwwr3Wzcmc8XTdmAgp6zmGLsFmJ9HAnEbTQAg937i/hqKFjtFVQ4TnQ2y6xlVSeTKy3VWcxvalwvmPq6qF7+UcLd3wBXYoVQ2Puj49mTweKh/v2Rvj9zyVjfbexFkjMNZ5XyGucmdOI6XMmI98Zvu38Jh1fOo8157YxlgCozKkonixczjGIn3RKLuv7v3gXDRl4irzRcS6lYKGJB8vfA847GUppsVjdZV9bAjADfqUP2Iyl6Nz8MOWrSHNy8tWqhM6mI165rCwH3xMv7HEexmsMO7Mi36c=s'
     });
 
     this.http.post(url, body, { headers }).subscribe({
       next: (res: any) => {
         console.log('Login success:', res);
-        this.router.navigate(['/dashboard']);
-        // Example: Save token to localStorage
         if (res.token) {
           localStorage.setItem('authToken', res.token);
         }
+        this.router.navigate(['/dashboard']);
+        // Example: Save token to localStorage
+        
         localStorage.setItem('user',body.email);
 
         // Navigate or update UI
