@@ -1,0 +1,80 @@
+.account-wrapper {
+    font-family: Arial, sans-serif;
+  }
+  
+  .account-header {
+    background: #007f75;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .account-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .account-card {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: -2rem auto 2rem;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+  }
+  
+  .account-main {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 2rem;
+  }
+  
+  aside {
+    flex: 1;
+  }
+  
+  aside ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  aside li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .logout {
+    color: red;
+  }
+  
+  .profile-form {
+    flex: 3;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .phone-field {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  footer {
+    background: #007f75;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+  
+  footer .links a {
+    margin: 0 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  

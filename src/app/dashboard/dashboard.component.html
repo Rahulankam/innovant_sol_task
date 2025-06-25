@@ -1,0 +1,57 @@
+<div class="account-wrapper">
+    <div class="account-header">
+      <img src="../assets/logo.png" alt="Kland Logo">
+      <h1>MY ACCOUNT</h1>
+      <p>Manage Your Fun: View Tickets, Book Zones, and Track Your Adventure!</p>
+    </div>
+  
+    <div class="account-card">
+      <div class="user-info">
+        <h3>test</h3>
+        <p>+965 98563214</p>
+        <p>{{email}}</p>
+      </div>
+    </div>
+  
+    <div class="account-main">
+      <aside>
+        <ul>
+          <li>Edit Profile</li>
+          <li>FAQs</li>
+          <li>Contact Us</li>
+          <li>Delete Account</li>
+          <li class="logout" (click)="logout()">Logout</li>
+
+        </ul>
+      </aside>
+  
+      <form class="profile-form">
+        <h2>PERSONAL INFORMATION</h2>
+        <div class="form-grid">
+          <input type="text" placeholder="First Name" value="">
+          <input type="text" placeholder="Last Name" value="">
+          <input type="email" placeholder="Email Address" value="">
+          <div class="phone-field">
+            <select><option>965</option></select>
+            <input type="text" placeholder="Phone Number" value="">
+          </div>
+          <input type="password" placeholder="Old Password">
+          <input type="password" placeholder="New Password">
+          <input type="password" placeholder="Confirm New Password">
+        </div>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  
+    <footer>
+      <div class="links">
+        <a href="#">Press</a>
+        <a href="#">FAQs</a>
+        <a href="#">Contact us</a>
+        <a href="#">About us</a>
+        <a href="#">Join the team</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+      <p>Copyright © 2024 K-Land. All Rights Reserved.</p>
+    </footer>
+  </div>
