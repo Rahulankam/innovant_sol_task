@@ -36,7 +36,7 @@ export class LoginComponent {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
       
-      'Authorization': `Bearer ${token}`
+      // 'Authorization': `Bearer ${token}`
     });
 
     this.http.post(url, body, { headers }).subscribe({
